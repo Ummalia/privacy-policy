@@ -211,12 +211,12 @@
         <span class="logo-name">Ummalia</span>
       </div>
       <h1>Politique de confidentialité</h1>
-      <p class="date">Dernière mise à jour : mai 2025</p>
+      <p class="date">Dernière mise à jour : août 2026</p>
     </div>
 
     <div class="badge">
       <svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      Aucune collecte de données personnelles
+      Aucune donnée personnelle collectée ni transmise
     </div>
 
     <p class="intro">
@@ -237,9 +237,10 @@
         L'application ne requiert aucune création de compte, aucune authentification et n'utilise aucun outil de suivi ou d'analyse.
       </p>
       <p>
-        La seule donnée conservée localement sur votre appareil est la <strong>zone géographique</strong> que vous
-        saisissez manuellement (ex. : Montréal, Paris). Cette information est stockée dans les préférences locales
-        de l'application et ne quitte jamais votre appareil.
+        Les seules données conservées sur votre appareil sont la <strong>zone géographique</strong> que vous
+        saisissez manuellement (ex. : Montréal, Paris) et, si vous l'autorisez, votre <strong>position
+        approximative ou précise</strong> utilisée pour l'affichage de la carte. Ces informations sont stockées
+        dans les préférences locales de l'application et ne quittent jamais votre appareil.
       </p>
     </div>
 
@@ -265,16 +266,54 @@
 
     <div class="section">
       <h2>
+        <svg viewBox="0 0 24 24"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        Utilisation de la localisation
+      </h2>
+      <p>
+        Avec votre autorisation, Ummalia utilise la position de votre appareil pour vous aider à trouver les
+        établissements halal les plus proches de vous. Cette position sert uniquement à :
+      </p>
+      <ul>
+        <li>Centrer la carte sur l'endroit où vous vous trouvez à l'ouverture.</li>
+        <li>Afficher et trier les restaurants, boucheries et épiceries à proximité.</li>
+        <li>Calculer la distance jusqu'à un établissement et, si vous le demandez, ouvrir un itinéraire dans votre application de navigation.</li>
+      </ul>
+      <p>
+        <strong>Votre position n'est jamais transmise à nos serveurs, ni enregistrée, ni partagée avec des tiers.</strong>
+        Le tri par proximité et le calcul des distances sont effectués <strong>localement sur votre appareil</strong>,
+        à partir de la liste d'établissements téléchargée depuis notre base de données.
+      </p>
+      <p>
+        L'application déclare les permissions <code>ACCESS_FINE_LOCATION</code> (position précise) et
+        <code>ACCESS_COARSE_LOCATION</code> (position approximative). Android vous laisse choisir, au moment de la
+        demande, d'accorder la position précise ou seulement la position approximative : l'application reste
+        fonctionnelle dans les deux cas. Ummalia n'accède à votre position que <strong>lorsqu'elle est ouverte et
+        utilisée au premier plan</strong>, n'utilise aucune permission de localisation en arrière-plan
+        (<code>ACCESS_BACKGROUND_LOCATION</code>) et ne suit pas vos déplacements.
+      </p>
+      <p>
+        L'autorisation est entièrement facultative : si vous la refusez ou la révoquez, l'application reste
+        pleinement utilisable — la carte se centre alors sur la zone géographique que vous saisissez manuellement
+        (ex. : Montréal, Paris). Vous pouvez accorder ou retirer cette autorisation à tout moment dans les
+        réglages de votre téléphone, à la rubrique consacrée aux autorisations de l'application.
+      </p>
+    </div>
+
+    <hr />
+
+    <div class="section">
+      <h2>
         <svg viewBox="0 0 24 24"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
         Carte et restaurants
       </h2>
       <p>
         L'application affiche une carte Google Maps avec les restaurants halal référencés dans notre base de données.
-        Les positions affichées proviennent exclusivement de notre serveur et non de votre position GPS.
+        Les positions des établissements affichés proviennent exclusivement de notre serveur.
       </p>
       <p>
-        Ummalia n'accède pas à votre localisation GPS. L'application ne demande pas et n'utilise pas les permissions
-        <code>ACCESS_FINE_LOCATION</code> ni <code>ACCESS_COARSE_LOCATION</code>.
+        Si vous avez autorisé l'accès à la localisation, votre position peut être affichée sur cette carte par le
+        service Google Maps afin de vous situer par rapport aux établissements. Ce traitement est soumis à la
+        <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">politique de confidentialité de Google</a>.
       </p>
     </div>
 
@@ -290,7 +329,7 @@
         <li>Récupérer la liste des restaurants halal depuis notre base de données.</li>
         <li>Afficher la carte Google Maps.</li>
       </ul>
-      <p>Ces échanges ne contiennent aucune donnée personnelle vous identifiant.</p>
+      <p>Ces échanges ne contiennent ni votre position, ni aucune donnée personnelle vous identifiant.</p>
     </div>
 
     <hr />
@@ -335,7 +374,7 @@
     </div>
 
     <footer>
-      &copy; 2025 Ummalia. Tous droits réservés.
+      &copy; 2026 Ummalia. Tous droits réservés.
     </footer>
 
   </div>
